@@ -1,6 +1,15 @@
 // Lab 15: Movie Class
 // COMSC-210 - Ibrahim Alatig 
 
+// UML template
+//--------------
+//     Movie
+// - title: string
+// - yearReleased: int
+// - screenWriter: string
+//------------------------
+
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -64,7 +73,7 @@ int main() {
 
     // Read data from file
     while (getline(inputFile, title) && inputFile >> year && inputFile.ignore() && 
-getline(inputFile, screenWriter)) {
+    getline(inputFile, screenWriter)) {
         Movie tempMovie;
         tempMovie.setTitle(title);
         tempMovie.setYearReleased(year);
@@ -72,15 +81,15 @@ getline(inputFile, screenWriter)) {
         movies.push_back(tempMovie);
     }
 
-inputFile.close();
+    inputFile.close();
 
-// output
-for (cost auto& movie : movies) {
-    movie.print();
-    cout << endl;
+    // output
+    for (const auto& movie : movies) {
+        movie.print();
+        cout << endl;
     }
 
-return 0;   
+    return 0;   
 }
 
 
