@@ -57,4 +57,19 @@ int main() {
         cerr << "Cant open file, Check the files name" << endl;
         return 1;
     }
+
+    string title;
+    int year;
+    string screenWriter;
+
+    // Read data from file
+    while (getline(inputFile, title) && inputFile >> year && inputFile.ignore() && 
+getline(inputFile, screenWriter)) {
+        Movie tempMovie;
+        tempMovie.setTitle(title);
+        tempMovie.setYearReleased(year);
+        tempMovie.setScreenWriter(screenWriter);
+        movies.push_back(tempMovie);
 }
+
+inputFile.close();
