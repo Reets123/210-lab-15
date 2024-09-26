@@ -48,3 +48,13 @@ public:
         cout << "    Screenwriter: " << screenWriter << endl;
     }
 };
+
+int main() {
+    vector<Movie> movies;
+    ifstream inputFile("input.txt");
+
+    if (!inputFile) {
+        cerr << "Cant open file, Check the files name" << endl;
+        return 1;
+    }
+}
