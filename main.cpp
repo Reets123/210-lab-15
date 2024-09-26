@@ -70,6 +70,17 @@ getline(inputFile, screenWriter)) {
         tempMovie.setYearReleased(year);
         tempMovie.setScreenWriter(screenWriter);
         movies.push_back(tempMovie);
-}
+    }
 
 inputFile.close();
+
+// output
+for (cost auto& movie : movies) {
+    movie.print();
+    cout << endl;
+    }
+
+return 0;   
+}
+
+
