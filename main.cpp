@@ -80,10 +80,11 @@ int main() {
     // Read data from file
     while (getline(inputFile, title) && inputFile >> year && inputFile.ignore() && 
     getline(inputFile, screenWriter)) {
+        
         Movie tempMovie;
-        tempMovie.setTitle(title);
+        tempMovie.setTitle(screenWriter);
         tempMovie.setYearReleased(year);
-        tempMovie.setScreenWriter(screenWriter);
+        tempMovie.setScreenWriter(title);
         movies.push_back(tempMovie);
     }
 
