@@ -34,11 +34,17 @@ public:
     }
 
     int getYearReleased() const{
-        return
+        return yearReleased;
     }
 
     string getScreenWriter() const {
         return screenWriter;
     }
 
-}
+    // Print method
+    void print() const {
+        cout << "Movie: " << title << endl;
+        cout << "    Year released: " << yearReleased << endl;
+        cout << "    Screenwriter: " << screenWriter << endl;
+    }
+};
