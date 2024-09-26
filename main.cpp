@@ -8,7 +8,13 @@
 // - yearReleased: int
 // - screenWriter: string
 //------------------------
-
+// + setTitle(t: string): void
+// + setYearReleased(year: int): void
+// + setScreenWriter(writer: string): void
+// + getTitle(): string
+// + getYearReleased(): int
+// + getScreenWriter(): string
+// + print(): void
 
 #include <iostream>
 #include <fstream>
