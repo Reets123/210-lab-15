@@ -21,7 +21,24 @@ public:
     }
 
     void setYearReleased(int year){
-    yearReleased = year;
+        yearReleased = year;
+    }
+
+    void setScreenWriter(const string& writer) {
+        screenWriter = writer;
+    }
+
+    // getters
+    string getTitle() const{
+        return title;
+    }
+
+    int getYearReleased() const{
+        return
+    }
+
+    string getScreenWriter() const {
+        return screenWriter;
     }
 
 }
